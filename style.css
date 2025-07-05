@@ -1,0 +1,36 @@
+@font-face {
+    font-family: norse;
+    src: url(font/Norse-Bold.otf);
+}
+
+html {
+    font-size: 16px;
+}
+
+body{
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.input-section {
+    display: flex;
+}
+
+.logo {
+    background-image: url(img/background-img.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 25%;
+    color: #fff;
+    font-family: norse;
+}
+
+.img {
+    /* background-color: black; */
+    height: auto;
+    width: 65px;
+}
