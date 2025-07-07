@@ -8,15 +8,17 @@ html {
 }
 
 body{
+    font-family: Arial, sans-serif;
     margin: 0;
+    background-color: #f8f8f8;
+    color: #111;
+    height: 100vh;
+
+    --color-green: #596D48;
+    --color-white: #fff;
 }
 
 .container {
-    display: flex;
-    height: 100vh;
-}
-
-.input-section {
     display: flex;
 }
 
@@ -24,13 +26,116 @@ body{
     background-image: url(img/background-img.jpg);
     background-size: cover;
     background-position: center;
-    width: 25%;
-    color: #fff;
-    font-family: norse;
+    width: 30%;
+    color: var(--color-white);
+   
+}
+.odin-logo {
+    margin-top: 3em;
+    background-color: rgba(17, 17, 17, 0.6);
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6px;
+    
 }
 
-.img {
-    /* background-color: black; */
-    height: auto;
-    width: 65px;
+.logo-txt {
+     font-family: norse;
 }
+
+.logo-img {
+    width: 55px;
+}
+
+.content {
+  flex: 1;              
+  display: flex;
+  flex-direction: column;
+}
+
+.message, .title {
+    font-weight: 900;
+    font-size: 1rem;
+}
+
+.message {
+    max-width: 500px;
+    line-height: 1.6;
+    padding: 2em;
+    margin-top: 3em;
+}
+
+.message em {
+    font-style: italic;
+}
+
+.message p {
+    margin-bottom: 1.2em;
+}
+
+.input-container {
+    background-color: var(--color-white);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding-top: 0.2em;
+    padding-left: 2em;
+    padding-bottom: 2em;
+    margin-bottom: 1.5em;
+}
+
+.input-section {
+    display: flex;
+    gap: 4em;
+    margin-bottom: 1em;
+}
+
+input {
+    box-sizing: border-box;
+    border: 1px solid #E5E7EB;
+    border-radius: 4px;
+    width: 250px;
+    padding: 7px;
+    font-size: 1rem;
+}
+
+input:focus{
+    border: 1px solid blue;
+    outline: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+input[type="password"]:invalid {
+    border: 1px solid #be0202;
+}
+
+label {
+    font-family: Georgia, serif;
+    font-size: 12px;
+}
+
+.submit-btn {
+    color: var(--color-white);
+    background-color: var(--color-green);
+    border: none;
+    border-radius: 7px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 10px 30px;
+    font-size: 1rem;
+    font-weight: 900;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.submit-btn, .login-message {
+    margin-left: 2em;
+}
+
+a{
+    text-decoration: none;
+    color: var(--color-green);
+    font-weight: 900;
+}
+
+
+
+
